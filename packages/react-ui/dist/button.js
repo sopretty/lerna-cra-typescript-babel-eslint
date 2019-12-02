@@ -29,7 +29,7 @@ var Button = function Button() {
 
   React.useEffect(function () {
     setState('test' + state);
-  }, []);
+  }, [state]);
   return React.createElement("button", null, "Button");
 };
 
