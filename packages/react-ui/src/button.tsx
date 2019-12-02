@@ -4,7 +4,7 @@ export const Button: React.FunctionComponent = () => {
 
   React.useEffect(() => {
     setState('test' + state);
-  }, []);
+  }, [state]);
 
   return <button>Button</button>;
 };

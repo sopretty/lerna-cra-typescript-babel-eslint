@@ -5,9 +5,25 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var _exportNames = {
+  HelloWorld: true
+};
 exports.HelloWorld = void 0;
 
 var React = _interopRequireWildcard(require("react"));
+
+var _button = require("./button");
+
+Object.keys(_button).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _button[key];
+    }
+  });
+});
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
