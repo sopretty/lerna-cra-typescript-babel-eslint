@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "lerna run build",
     "lint:fix": "eslint './packages/**/*.{ts,tsx}'"
   },
   "devDependencies": {

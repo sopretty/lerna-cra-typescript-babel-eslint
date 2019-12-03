@@ -1,5 +1,5 @@
-import React from 'react';
-import {HelloWorld} from 'react-ui';
+import * as React from 'react';
+import {HelloWorld} from '@sopretty/react-ui';
 import './App.css';
 
 function App() {
