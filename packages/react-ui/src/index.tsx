@@ -4,6 +4,6 @@ export * from './button';
 import {Button} from './button';
 export const HelloWorld = ({children}: {children: React.ReactNode}) => (
   <div>
-    HelloWorld {children} <Button>Button Test</Button>
+    Hello World {children} <Button>Button</Button>
   </div>
 );
