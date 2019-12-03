@@ -8,7 +8,8 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna run build",
     "lint:fix": "eslint './packages/**/*.{ts,tsx}'",
-    "start": "lerna run start"
+    "start:react-app": "lerna run --parallel --include-dependencies --scope @sopretty/react-app start",
+    "start:angular-app": "lerna run --parallel --include-dependencies --scope @sopretty/angular-app start"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
