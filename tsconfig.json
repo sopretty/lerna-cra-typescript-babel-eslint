@@ -14,6 +14,9 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "baseUrl": "./packages",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "paths": {
       "@sopretty/*": ["*/src"]
     },
