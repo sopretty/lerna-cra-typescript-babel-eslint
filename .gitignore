@@ -27,11 +27,17 @@ logs
 .env.development.local
 .env.test.local
 .env.production.local
+.sass-cache
+connect.lock
+libpeerconnection.log
+Thumbs.db
 
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+testem.log*
+typings
 
 # dependencies
 node_modules
@@ -50,7 +56,25 @@ sketch
 
 # compiled output
 dist
+tmp
+out-tsc
+dist
 build
+# Only exists if Bazel was run
+bazel-out
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 ### VisualStudioCode ###
 .vscode/*
