@@ -6,7 +6,9 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "lint:fix": "eslint './packages/**/*.{ts,tsx}'"
+    "build": "lerna run build",
+    "lint:fix": "eslint './packages/**/*.{ts,tsx}'",
+    "start": "lerna run start"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
