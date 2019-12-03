@@ -1,6 +1,6 @@
 {
   "name": "@sopretty/lit-element",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Trying out lit-element with typescript",
   "main": "dist/lit-element",
   "license": "MIT",

@@ -2,6 +2,14 @@ import * as React from 'react';
 import {HelloWorld} from '@sopretty/react-ui';
 import './App.css';
 
+declare global {
+  namespace JSX {
+      interface IntrinsicElements {
+          'tdw-button': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+      }
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +25,7 @@ function App() {
           rel="noopener noreferrer">
           Learn React
         </a>
+        <tdw-button></tdw-button>
       </header>
     </div>
   );
