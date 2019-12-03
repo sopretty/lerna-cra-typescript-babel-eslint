@@ -4,7 +4,11 @@
     "allowJs": false,
     "jsx": "preserve",
     "outDir": "dist",
+    "rootDir": "./src",
     "emitDeclarationOnly": true,
     "declaration": true
   },
+  "exclude": [
+    "dist",
+  ],
 }
