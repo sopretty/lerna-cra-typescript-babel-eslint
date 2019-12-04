@@ -2,11 +2,10 @@
   "name": "@sopretty/lit-element",
   "version": "1.0.0",
   "description": "Trying out lit-element with typescript",
-  "main": "dist/lit-element",
+  "main": "dist/lit-element/index.js",
   "license": "MIT",
   "scripts": {
-    "copywc": "cp -r ../../node_modules/@webcomponents/webcomponentsjs/bundles dist && cp ../../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js dist",
-    "build": "tsc && yarn run copywc"
+    "build": "tsc"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",

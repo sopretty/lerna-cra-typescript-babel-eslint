@@ -2,32 +2,41 @@ import {html, LitElement, property} from 'lit-element';
 
 export type Color = 'primary' | 'secondary' | 'danger';
 
+
+const primaryColor = html`
+<style> button { background-color: blue; } </style>
+`;
+
+const secondaryColor = html`
+  <style> button { background-color: gray; 
+  } </style>
+`;
+
+const dangerColor = html`
+  <style> button { background-color: red; } </style>
+`;
+
 export class Button extends LitElement {
-// Declare and initialize properties
-
-/**
- *   children,
-  color,
-  disabled,
-  icon,
-  large,
-  negative,
-  renderer,
-  small,
-  style,
-  textButton,
-  theme,
- */
-
- 
 
 @property({type : String}) color: Color  = 'primary';
 @property({type : Boolean}) negative = false;
 @property({type : Boolean}) small = true;
-@property({type : Array}) prop4 = [1,2,3];
+
+
+handleClick = () => {
+  console.log('handleclick')
+  const event = new CustomEvent('fdp', {
+    detail: {
+      message: 'click'
+    }
+  });
+  this.dispatchEvent(event);
+}
+
   render() {
     return html`
-      <button><slot></slot></button>
+    ${this.color === 'primary' ? primaryColor : this.color === 'secondary' ? secondaryColor : dangerColor}
+      <button @click=${this.handleClick}><slot></slot></button>
     `;
   }
 }
